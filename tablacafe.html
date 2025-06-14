@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeterías</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+           * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+       body {
+            background-color: #f8eae6;
+            font-family: 'Poppins', sans-serif;
+            padding: 0px;
+            text-align: center;
+        }
+        h1 {
+            color: #5a3e36;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #5a3e36;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1d7d7;
+        }
+        td a {
+            color: #a0483b;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+    background-color: #5a3e36;
+    padding: 15px;
+    margin-bottom: 20px; 
+}
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #e7c4b5;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tablacafe.html">Cafeterías</a></li>
+            <li><a href="table.html">Lugares para visitar</a></li>
+            <li><a href="juego.html">Simulador de viaje</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="pruebaplay.html">Spotify</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Mis Cafeterías Favoritas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Instagram</th>
+                <th>Precio (café + 2 medialunas)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Blanca Café</td>
+                <td>📍Sinclair 3136<br>📍Soldado de la Independencia 1177. Palermo</td>
+                <td><a href="https://www.instagram.com/blancadecocafe/" target="_blank">@blancadecocafe</a></td>
+                <td>6200</td>
+            </tr>
+            <tr>
+                <td>Cofi Jaus</td>
+                <td>📍Montañeses 1879. Belgrano</td>
+                <td><a href="https://www.instagram.com/cofijaus/" target="_blank">@cofijaus</a></td>
+                <td>4600</td>
+            </tr>
+            <tr>
+                <td>Cuervo Café</td>
+                <td>📍El Salvador 4580. Palermo</td>
+                <td><a href="https://www.instagram.com/cuervocafe/" target="_blank">@cuervocafe</a></td>
+                <td>6200</td>
+            </tr>
+            <tr>
+                <td>Kopi Café</td>
+                <td>📍Montañeses 2905. Nuñez</td>
+                <td><a href="https://www.instagram.com/somoskopi/" target="_blank">@somoskopi</a></td>
+                <td>5900</td>
+            </tr>
+        </tbody>        
+    </table>
+
+</body>
+</html>

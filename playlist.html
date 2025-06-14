@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3e5dc;
+    }
+
+    header {
+      background-color: #4e342e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    h3 {
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+  
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #d7ccc8;
+      width: 200px;
+      padding: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #bcaaa4;
+      color: #4e342e;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .sidebar a:hover {
+      background-color: #a1887f;
+    }
+
+    .main {
+      flex: 1;
+      background-color: #fff8f0;
+      padding: 30px;
+      color: #4e342e;
+    }
+
+    .video-section {
+      display: none;
+    }
+
+    .video-section.active {
+      display: block;
+    }
+
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      margin-top: 10px;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 12px 25px;
+      background-color: #4e342e;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-volver:hover {
+      background-color: #6d4c41;
+    }
+
+    .navbar {
+            background-color: #5a3e36;
+            padding: 15px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #e7c4b5;
+        }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tablacafe.html">Cafeterías</a></li>
+        <li><a href="table.html">Lugares para visitar</a></li>
+        <li><a href="juego.html">Simulador de viaje</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+        <li><a href="pruebaplay.html">Spotify</a></li>
+    </ul>
+</nav>
+
+  <h3>Canciones más escuchadas de YouTube</h3>
+
+  <a href="index.html" class="boton-volver" style="margin: 20px;">⬅ Volver al inicio</a>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="#" onclick="mostrarVideo('video1')">Despacito</a>
+      <a href="#" onclick="mostrarVideo('video2')">Shape of You</a>
+      <a href="#" onclick="mostrarVideo('video3')">See You Again</a>
+      <a href="#" onclick="mostrarVideo('video4')">Baby Shark</a>
+      <a href="#" onclick="mostrarVideo('video5')">Uptown Funk</a>
+    </div>
+
+    <div class="main">
+      <div id="video1" class="video-section active">
+        <h2>Despacito – Luis Fonsi ft. Daddy Yankee</h2>
+        <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" allowfullscreen></iframe>
+      </div>
+
+      <div id="video2" class="video-section">
+        <h2>Shape of You – Ed Sheeran</h2>
+        <iframe src="https://www.youtube.com/embed/JGwWNGJdvx8" allowfullscreen></iframe>
+      </div>
+
+      <div id="video3" class="video-section">
+        <h2>See You Again – Wiz Khalifa ft. Charlie Puth</h2>
+        <iframe src="https://www.youtube.com/embed/RgKAFK5djSk" allowfullscreen></iframe>
+      </div>
+
+      <div id="video4" class="video-section">
+        <h2>Baby Shark – Pinkfong</h2>
+        <iframe src="https://www.youtube.com/embed/XqZsoesa55w" allowfullscreen></iframe>
+      </div>
+
+      <div id="video5" class="video-section">
+        <h2>Uptown Funk – Mark Ronson ft. Bruno Mars</h2>
+        <iframe src="https://www.youtube.com/embed/OPf0YbXqDm0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarVideo(id) {
+      const secciones = document.querySelectorAll('.video-section');
+      secciones.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

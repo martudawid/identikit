@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegí tu destino</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7e7e7;
+            text-align: center;
+            color: #5a3e36;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #5a3e36;
+            padding: 25px 0;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #e7c4b5;
+        }
+
+        .intro {
+            max-width: 600px;
+            margin: 40px auto 30px;
+        }
+
+        .intro h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+            color: #5a3e36;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #8b5e58;
+        }
+
+        h2 {
+            color: #8b5e58;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        .opciones {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .opciones a img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .opciones a img:hover {
+            transform: scale(1.05);
+        }
+
+        .boton-volver {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 10px 20px;
+            background-color: #5a3e36;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .boton-volver:hover {
+            background-color: #7a5247;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tablacafe.html">Cafeterías</a></li>
+            <li><a href="table.html">Lugares para visitar</a></li>
+            <li><a href="juego.html">Simulador de viaje</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="pruebaplay.html">Spotify</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <h1>Armá tu viaje</h1>
+        <p>Elegí tus opciones favoritas y descubrí cómo sería tu viaje ideal ✨</p>
+    </div>
+
+    <h2>¿A dónde te gustaría viajar?</h2>
+
+    <div class="opciones">
+        <a href="playa.html">
+            <img src="imagenes/playaa.jpg" alt="playa">
+        </a>
+        <a href="montaña.html">
+            <img src="imagenes/montañaa.jpg" alt="montaña">
+        </a>
+        <a href="ciudad.html">
+            <img src="imagenes/ciudadd.jpg" alt="ciudad">
+        </a>
+    </div>
+
+    <a href="index.html" class="boton-volver">⬅ Volver al inicio</a
